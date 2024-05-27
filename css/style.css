@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+#flex-display{
+    display: flex; /*Ativa o display flex*/
+    background-color: aqua;
+
+    /*Direços
+
+    flex-direction: row-reverse; - Faz a direção do bloco ser da esquerda pra direita em vez do padrão que é da esquerda para direita
+    flex-direction: column; - A direção passa a ser de cima para baixo
+    flex-direction: column-reverse; - A direção passa a ser de baixo para cima*/
+
+    /*Justify-content
+
+    justify-content: flex-end; Alinha o contéudo no final do display , o padrão é o flex-start*/
+    justify-content: center; /*Alinha o contéudo no meio ddo display
+    justify-content: space-between; Cria um espaço entre os elementos na horizontal dividindo igualmente o espaço*/
+    justify-content: space-around; /*Cria um espaço aos lados de cada elemento*/
+    & img{
+        height: 100px;
+    }
+}

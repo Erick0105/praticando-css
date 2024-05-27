@@ -10,3 +10,7 @@
 ---
 
 Criei este repósitorio com o intuito de praticar o meu dominio com **Front**-End mais expecificamente com a parte de **CSS**, mais detalhadamente em ***display flex e grid***, claro que neste repósitorio terá um pouco de **HTML** e talvez **JS** mas não serão o foco. 
+
+---
+
+Em suma estou usando alguns matérias de apoio para a minha prática sendo eles o site <a href="https://mastery.games/flexboxzombies/">FlexBox Zombies</a>, e o livro **CSS GRID LAYOUT**
