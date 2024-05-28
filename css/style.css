@@ -7,7 +7,7 @@
     background-color: aqua;
     height: 300px;
 
-    /*Direços
+    /*Direções
 
     flex-direction: row-reverse; - Faz a direção do bloco ser da esquerda pra direita em vez do padrão que é da esquerda para direita
     flex-direction: column; - A direção passa a ser de cima para baixo
@@ -27,7 +27,7 @@
     align-items: flex-start;  Alinha os contéudos no topo do display
     align-items: flex-end;  Alinha os contéudos na parte de baixo do display
     align-items: stretch; estica os contéudos
-    align-items: center; oposto de stretch*/
+    align-items: center; centraliza os contéudos*/
 
     justify-content: center;
     justify-content: space-around;
@@ -43,16 +43,41 @@
         justify-content: space-between;
         align-items: flex-end;
 
+        & img{
+            height: 80px;
+            width: 65px;
+            border-style: solid;
+            border-color: blueviolet;
+        }
+
         & #self {
             display: flex;
             align-self: flex-start; /*"self" - Você meio que sobre-escrever alguma função para algum elemento fazendo com que fique diferente dos demais elementos*/
         }
+        /*Em vez de criar um id/class e fazer as alterações por ela, pode fazer pelo seguinte jeito: 
 
-        & img{
-            height: 80px;
-            border-style: solid;
-            border-color: blueviolet;
+        "& img:nth-of-type(2){
+            display: flex;
+            align-self: flex-start;
+            flex-grow: 1;"
         }
+
+        O "img:nth-of-type(2)" faz com que a cada duas imagens a segunda sofra as alterações
+        */
+
+        & img:nth-of-type(1){
+            display: flex;
+            flex-grow: 10;
+        }
+
+        & img:nth-of-type(2){
+            display: flex;
+            flex-grow: 3;
+        }
+
+        /* o flex-grow fala o quanto elemento vai crescer com relação ao resto dos flex elementos dentro do espaço (vai de 0 até 10,) */
+
+        
 
     }
 
