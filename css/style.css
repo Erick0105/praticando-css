@@ -1,11 +1,13 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 #flex-display{
     display: flex; /*Ativa o display flex*/
     background-color: aqua;
-    height: 300px;
+    min-height: 100vh;
+    width: 100%;
 
     /*Direções
 
@@ -29,63 +31,78 @@
     align-items: stretch; estica os contéudos
     align-items: center; centraliza os contéudos*/
 
-    justify-content: center;
     justify-content: space-around;
-    align-items: center;
-    
-    & #imagens{
+    & h1{
         display: flex;
-        border-style: dashed;
-        border-color: white;
-        padding: 5px;
-        width: 300px;
-        height: 160px;
-        justify-content: space-between;
-        align-items: flex-end;
+        align-self: center;
+        font-size: 50px;
+        border: 2px solid white;
+    }
+
+    & .imagens{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+    & #front{
+        
+        display: flex;
+        border: 2px dashed white;
+        width: 350px;
+        height: 100px;
+        justify-content: space-around;
+        align-self: flex-start;
+        align-items: center;
 
         & img{
             height: 80px;
             width: 65px;
-            border-style: solid;
-            border-color: blueviolet;
+            border: 2px solid blueviolet;
         }
+
+        /*
 
         & #self {
             display: flex;
-            align-self: flex-start; /*"self" - Você meio que sobre-escrever alguma função para algum elemento fazendo com que fique diferente dos demais elementos*/
+            align-self: flex-start; "align-self" - Você meio que sobre-escrever alguma função para algum elemento fazendo com que fique diferente dos demais elementos
         }
-        /*Em vez de criar um id/class e fazer as alterações por ela, pode fazer pelo seguinte jeito: 
+        Em vez de criar um id/class e fazer as alterações por ela, pode fazer pelo seguinte jeito: 
 
         "& img:nth-of-type(2){
             display: flex;
-            align-self: flex-start;
-            flex-grow: 1;"
+            flex-grow: 3;"
         }
 
-        O "img:nth-of-type(2)" faz com que a cada duas imagens a segunda sofra as alterações
-        */
-
-        & img:nth-of-type(1){
-            display: flex;
-            flex-grow: 10;
-        }
-
-        & img:nth-of-type(2){
-            display: flex;
-            flex-grow: 3;
-        }
-
-        /* o flex-grow fala o quanto elemento vai crescer com relação ao resto dos flex elementos dentro do espaço (vai de 0 até 10,) */
-
+        O "img:nth-of-type(2)" faz com que a cada duas imagens a segunda sofra as alterações. O flex-grow fala o quanto elemento vai crescer com relação ao resto dos flex elementos dentro do espaço (vai de 0 até 10,)padrão é 0 */
         
 
     }
+    
 
+    & #back{
+        display: flex;
+        border: 2px dashed white;
+        justify-content: space-between;
+        width: 350px;
+        height: 100px;
 
-    & h1{
-        font-size: 50px;
-        border-style: solid;
-        border-color: white;
+        & img{
+            display: flex;   
+            height: 80px;
+            width: 65px;
+            border: 2px solid blueviolet;
+            align-self: center;
+            
+        }
+        /*
+        & img:nth-of-type(2){
+            flex-shrink: 8;
+        } A função shrink é o oposto do flex-grow. e funciona apenas quando não tem mais espaço para os componentes, é bom com responsabilidade pelo jeito o padrão é zero também */
     }
+    
+
+    
 }
 
