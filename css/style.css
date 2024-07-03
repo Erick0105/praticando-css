@@ -30,11 +30,14 @@
     align-items: center; centraliza os contéudos*/
 
     justify-content: space-around;
-    h1 {
+
+    #texto{
         display: flex;
         align-self: center;
-        font-size: 50px;
-        border: 2px solid white;
+        h1 {
+            font-size: 50px;
+            border: 2px solid white;
+        }
     }
 
     .imagens {
@@ -49,6 +52,8 @@
         width: 65px;
         border: 2px solid blueviolet;
     }
+
+    /*Aqui pra frente eu defini a ordem das divs e a ordem das imagens da div back tudo com a tag "order" para funcionar você deve definir o valor da tag order em todos*/
     
     #front {
         display: flex;
@@ -58,6 +63,7 @@
         justify-content: space-around;
         align-self: flex-start;
         align-items: center;
+        order: 3;
 
 
     }
@@ -70,6 +76,7 @@
         justify-content: space-around;
         align-self: flex-start;
         align-items: center;
+        order: 1;
 
     }
     
@@ -80,6 +87,11 @@
         width: 350px;
         height: 100px;
         align-items: center;
+        order: 2;
+
+        #python-order{
+            order: -1; /*O '-1' faz com que este item pule para frente dos itens sem order, mas se colocar o 1 ele vai para trás dos itens sem a tag order*/
+        }
     }
 
     /*
