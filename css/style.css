@@ -31,7 +31,7 @@
 
     justify-content: space-around;
 
-    #texto{
+    #texto {
         display: flex;
         align-self: center;
         h1 {
@@ -44,6 +44,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        div {
+            display: flex;
+            border: 2px dashed white;
+            width: 300px;
+            padding: 10px;
+            justify-content: space-around;
+            align-self: flex-start;
+            align-items: center;
+        }
     }
 
     img {
@@ -54,42 +63,19 @@
     }
 
     /*Aqui pra frente eu defini a ordem das divs e a ordem das imagens da div back tudo com a tag "order" para funcionar você deve definir o valor da tag order em todos*/
-    
+
     #front {
-        display: flex;
-        border: 2px dashed white;
-        width: 350px;
-        height: 100px;
-        justify-content: space-around;
-        align-self: flex-start;
-        align-items: center;
         order: 3;
-
-
     }
 
     #aprender {
-        display: flex;
-        border: 2px dashed white;
-        width: 400px;
-        height: 100px;
-        justify-content: space-around;
-        align-self: flex-start;
-        align-items: center;
         order: 1;
-
+        flex-wrap: wrap; /*O flex wrap faz com que caso passe o tamanho limite do width ele pule linha isso quando o valor é wrap, já quando o valor é wrap-invert ele faz como diz, inverte os lados resumidamente*/
     }
-    
-    #back {
-        display: flex;
-        border: 2px dashed white;
-        justify-content: space-between;
-        width: 350px;
-        height: 100px;
-        align-items: center;
-        order: 2;
 
-        #python-order{
+    #back {
+        order: 2;
+        #python-order {
             order: -1; /*O '-1' faz com que este item pule para frente dos itens sem order, mas se colocar o 1 ele vai para trás dos itens sem a tag order*/
         }
     }
@@ -115,6 +101,4 @@
     & img:nth-of-type(2){
         flex-shrink: 8;
     } A função shrink é o oposto do flex-grow. e funciona apenas quando não tem mais espaço para os componentes, é bom com responsabilidade pelo jeito o padrão é zero também */
-
-
 }
