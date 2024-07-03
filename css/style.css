@@ -99,8 +99,15 @@
     /*
     FLEX GROW/SHRINK/BASIS
     Com combinação do flex-grow e flex-shrink existe o flex-basis que defini o tamanho inicial de um item que seja flexivel(que tenha flex-grow/shrink) e se não for flexivel não faz diferença 
-    Se tiver um min-width o flex-basis vai respeitar o valor do min-width, mesma coisa serve pro max-width.
-    para simplificar tudo só utilizar a tag 'flex: a b c' onde o 'a' é o valor do flex-grow, 'b' o valor de flex-shrink e o 'c' o valor de flex-basis 
+    Se tiver um min-width o flex-basis vai respeitar o valor do min-width, mesma coisa serve pro max-width.*/
+
+    /*OTIMIZAÇÔES
+
+    - grow/shrink/basis
+    Para simplificar esses 3 é só utilizar a tag 'flex: a b c' onde o 'a' é o valor do flex-grow, 'b' o valor de flex-shrink e o 'c' o valor de flex-basis
+    
+    - direction/wrap
+    Para simplificar esses 2 só utilizar a tag "flex-flow: 'a' 'b' " onde o "a" é o valor do flex-direction e o "b" o valor do flex-wrap
     */
 
 }
