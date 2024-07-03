@@ -48,6 +48,7 @@
             display: flex;
             border: 2px dashed white;
             width: 300px;
+            height:200px;
             padding: 10px;
             justify-content: space-around;
             align-self: flex-start;
@@ -71,6 +72,7 @@
     #aprender {
         order: 1;
         flex-wrap: wrap; /*O flex wrap faz com que caso passe o tamanho limite do width ele pule linha isso quando o valor é wrap, já quando o valor é wrap-invert ele faz como diz, inverte os lados resumidamente*/
+        align-content: space-between; /*A tag align-content já mexe com as linhas que são criadas com o wrap, elas definem como serão as linhas nesse caso usa o space-between entre as linhas*/
     }
 
     #back {
