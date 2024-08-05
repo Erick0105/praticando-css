@@ -4,7 +4,6 @@
 
 <code><img src="./imgs/css-logo.png" alt="css-logo" height=60px/></code>
 <code><img src="./imgs/html-logo.png" alt="html-logo" height=60px/></code>
-<code><img src="./imgs/js-logo.png" alt="js-logo" height=55px/></code>
 
 </div>
 
