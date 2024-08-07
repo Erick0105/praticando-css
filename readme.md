@@ -13,4 +13,4 @@ Criei este repósitorio com o intuito de praticar o meu dominio com **Front-End*
 
 ---
 
-Em suma estou usando alguns matérias de apoio para a minha prática sendo eles o site <a href="https://mastery.games/flexboxzombies/">FlexBox Zombies</a>, além de alguns ensinamentos que fui adquirindo durante a aula da FIAP.
+Em suma estou usando alguns matérias de apoio para a minha prática sendo eles os sites <a href="https://mastery.games/flexboxzombies/">FlexBox Zombies</a> e o <a href="https://cssgridgarden.com/#fr">Grid Garden</a>, além de alguns ensinamentos que fui adquirindo durante a aula da FIAP.
